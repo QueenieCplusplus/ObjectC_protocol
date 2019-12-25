@@ -35,9 +35,9 @@ XXX.h
 實行協定                                                            
                                                                  
                    #import <Foudation/Foundation.h>               
-                   #import "協定名稱"
-                   
-                   @interface QQQ: NSObject<協定名稱>
+                   #import "協定名稱"      -------------------
+                                                            實施協定
+                   @interface QQQ: NSObject<協定名稱> --------
                    {
                    
                       int p;
@@ -74,7 +74,7 @@ QQQ.h
                  
                  -(void)go               -------
                  {                              |
-                    NSLog(@"go");              繼承
+                    NSLog(@"go");          繼承協定的方法
                                                 |  
                  }                       -------
                   
