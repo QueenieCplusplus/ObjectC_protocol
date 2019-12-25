@@ -72,12 +72,12 @@ QQQ.h
                  
                  }
                  
-                 -(void)go
-                 {
-                    NSLog(@"go");
-                 
-                 }
-                 
+                 -(void)go               -------
+                 {                              |
+                    NSLog(@"go");              繼承
+                                                |  
+                 }                       -------
+                  
                  @end
 
 main.m
