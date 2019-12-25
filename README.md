@@ -18,21 +18,59 @@ Object C 添增協定，以實現類別的多重繼承功能
                    實現協定的必須方法
                    
                    @end
+                   
+KKK.h
+協定
+
+
+
+AAA.h
+介面
+
+                   #import <Foudation/Foundation.h>
+                   #import "協定名稱"
+                   
+                   @interface QQQ: NSObject<協定名稱>
+                   {
+                   
+                      int p;
+                   
+                   }
+                   
+                   -(void)setP;
+                   -(void)printP;
+                   
+                   @end
+
 
 QQQ.h
-
-                   
-
-
-
-
-PPP.h
-
-
-
-KKK.h
-
-
+建置類別
+實作方法
+                 #import"QQQ.h"
+                 
+                 @implementation QQQ
+                 
+                 -(void) setP
+                 {
+                 
+                    p=99;
+                 
+                 }
+                 
+                 -(void) printP
+                 {
+                 
+                    NSlog(@"%i", p);
+                 
+                 }
+                 
+                 -(void)go
+                 {
+                    NSLog(@"go");
+                 
+                 }
+                 
+                 @end
 
 main.m
 
