@@ -26,6 +26,7 @@ KKK.h
 
 AAA.h
 介面
+實行協定
 
                    #import <Foudation/Foundation.h>
                    #import "協定名稱"
