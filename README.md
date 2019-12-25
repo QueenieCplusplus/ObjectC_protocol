@@ -16,6 +16,7 @@ Object C 添增協定，以實現類別的多重繼承功能
                    
                    @required 
                    實現協定的必須方法
+                   如無指定關鍵字，則協定中宣告的方法預設為必須實現。
                    
                    @end
                    
@@ -81,4 +82,22 @@ QQQ.h
                  @end
 
 main.m
+
+                #import<Foundation.Foundation.h>
+                #import"QQQ.h"
+                
+                int main(int argc, const char * argv[])
+                {
+                
+                   QQQ *q=[[QQQ alloc]init];
+                   
+                   //call functions
+                   [q setP];
+                   [q printP];
+                   [q go]; -------------------> 協定方法被輾轉繼承
+                
+                   return 0;
+                }
+
+
 
