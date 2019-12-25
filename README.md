@@ -24,7 +24,7 @@ KKK.h
 協定
 
                   #import <Foundation/Foundation.h>
-                  @protocol 協定名稱
+                  @protocol 協定名稱叫KKK
                   
                   -(void)go;   ------------------------------------
                   @end                                            |
@@ -36,9 +36,9 @@ XXX.h
 實行協定                                                            
                                                                  
                    #import <Foudation/Foundation.h>               
-                   #import "協定名稱"      -------------------
+                   #import "KKK"      ----------------------
                                                             實施協定
-                   @interface QQQ: NSObject<協定名稱> --------
+                   @interface QQQ: NSObject<KKK> --------
                    {
                    
                       int p;
@@ -104,4 +104,13 @@ main.m
                 }
 
 
+同時實施多個協定時
+實施方式
 
+                  #import"協定1.h"
+                  #import"協定2.h"
+                  #import"協定3.h"
+                  
+                  @interface QQQ: NSObject<協定1, 協定2, 協定3>
+
+               
