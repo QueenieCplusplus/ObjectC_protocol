@@ -22,13 +22,19 @@ Object C 添增協定，以實現類別的多重繼承功能
 KKK.h
 協定
 
-
-
-AAA.h
-介面
-實行協定
-
-                   #import <Foudation/Foundation.h>
+                  #import <Foundation/Foundation.h>
+                  @protocol 協定名稱
+                  
+                  -(void)go;   ------------------------------------
+                  @end                                            |
+                                                                  |
+                                                                  |
+                                                                被QQQ.h繼承
+XXX.h                                                             
+介面                                                               
+實行協定                                                            
+                                                                 
+                   #import <Foudation/Foundation.h>               
                    #import "協定名稱"
                    
                    @interface QQQ: NSObject<協定名稱>
@@ -47,6 +53,7 @@ AAA.h
 QQQ.h
 建置類別
 實作方法
+
                  #import"QQQ.h"
                  
                  @implementation QQQ
