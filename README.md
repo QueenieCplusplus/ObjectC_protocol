@@ -112,5 +112,9 @@ main.m
                   #import"協定3.h"
                   
                   @interface QQQ: NSObject<協定1, 協定2, 協定3>
+                  
+                    //...
+                    
+                  @end
 
                
